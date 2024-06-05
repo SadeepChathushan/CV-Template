@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .top {
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.container .top .imgBx {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .top .imgBx .box {
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .top .imgBx .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profileText {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .top .profileText h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333;
+}
+
+.container .top .profileText h3 span {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #777;
+    margin-top: 10px;
+}
+
+.container .contentBox {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+.container .contentBox .leftSide, .container .contentBox .rightSide {
+    flex: 1;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.container .contentBox h3 {
+    border-left: 4px solid #ff8bb3;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container .contentBox ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.container .contentBox ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.container .contentBox ul.education li, .container .contentBox .language li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container .contentBox ul.education h4, .container .contentBox ul.education h5, .container .contentBox ul.education h6 {
+    font-weight: 500;
+    color: #333;
+}
+
+.container .contentBox .language .percent {
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.container .contentBox .language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+
+.container .contentBox .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .contentBox .skills li {
+    margin: 10px;
+    background: #3590d2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container .contentBox .about p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.container .contentBox .about .campus {
+    margin-bottom: 20px;
+}
+
+.container .contentBox .about .campus ul {
+    margin-left: 20px;
+}
+
+.container .contentBox .about .campus h4 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container .contentBox .about .campus h5 {
+    color: #3590d2;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container .contentBox .about .campus ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
